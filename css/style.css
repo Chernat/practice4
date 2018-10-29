@@ -1,0 +1,160 @@
+@font-face {
+    font-family: "ProximaNova-Regular";
+    src: url("../fonts/ProximaNova-Regular.ttf") format("truetype"),
+    url("../fonts/ProximaNova-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "ProximaNova-Semibold";
+    src: url("../fonts/ProximaNova-Semibold.ttf") format("truetype"),
+    url("../fonts/ProximaNova-Semibold.woff") format("woff");
+}
+
+
+body {
+  background: #f7f7f7;
+  font-size: 12px;
+  color: #b7b7b7;
+}
+
+a {
+  color: #b7b7b7;
+  text-decoration: none;
+  font-family: "ProximaNova-Semibold";
+}
+
+a:hover{
+  color: #000;
+}
+
+h1 {
+  font-size: 28px;
+  font-family: "ProximaNova-Regular";
+  font-weight: normal;
+}
+
+h1 span {
+  font-family: "ProximaNova-Semibold";
+  color: #707070;
+}
+
+p {
+  margin: 5px;
+}
+
+.wrapper {
+  width: 340px;
+  margin: auto;
+  font-family: "ProximaNova-Regular";
+}
+
+.form {
+  width: 340px;
+  text-align: center;
+  margin: auto;
+  background: #fff;
+  padding: 28px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.names {
+  display: flex;
+}
+
+#first-name {
+  margin-right: 15px;
+}
+
+#first-name,
+#last-name {
+  width: 142px;
+}
+
+
+input {
+  width: 320px;
+  margin: 10px 0;
+  height: 25px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background: #f0f0f0;
+  font-size: 16px;
+  color: #b7b7b7;
+  font-family: inherit;
+}
+
+::placeholder {
+  font-family: "ProximaNova-Semibold";
+  color: #b7b7b7;
+}
+
+button {
+  background: #fea15d;
+  height: 35px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  margin: 15px 0;
+  transition: 0.5s;
+}
+
+button:hover {
+  background: #f77a1e;
+  cursor: pointer;
+}
+
+.username input {
+  background: #f0f0f0 url(../img/user.png) 97% 50% no-repeat;
+  padding-right: 40px;
+  width: 290px;
+}
+
+.password input {
+  background: #f0f0f0 url(../img/lock.png) 97% 50% no-repeat;
+  padding-right: 40px;
+  width: 290px;
+}
+
+input[type="checkbox"] {
+  display:none;
+}
+
+input[type="checkbox"] + label {
+  text-align: left;
+  display: block;
+  position: relative;
+  padding-left: 25px;
+}
+
+input[type="checkbox"] + label:before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: #f0f0f0;
+  position: absolute;
+  left: 0;
+  top: 1px;
+}
+
+input[type="checkbox"]:checked + label::after {
+  position: absolute;
+  content: '';
+  width: 14px;
+  height: 9px;
+  left: 0;
+  top: -3px;
+  border-left: 2px solid #fea15d;
+  border-bottom: 2px solid #fea15d;
+  transform: rotate(-45deg);
+}
+
+.text-overflow {
+  margin: 0 102px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

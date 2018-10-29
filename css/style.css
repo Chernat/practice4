@@ -108,13 +108,13 @@ button:hover {
 }
 
 .username input {
-  background: #f0f0f0 url(../img/user.png) 97% 50% no-repeat;
+  background: #f0f0f0 url(https://raw.githubusercontent.com/Chernat/practice4/master/img/user.png) 97% 50% no-repeat;
   padding-right: 40px;
   width: 290px;
 }
 
 .password input {
-  background: #f0f0f0 url(../img/lock.png) 97% 50% no-repeat;
+  background: #f0f0f0 url(https://raw.githubusercontent.com/Chernat/practice4/master/img/lock.png) 97% 50% no-repeat;
   padding-right: 40px;
   width: 290px;
 }
